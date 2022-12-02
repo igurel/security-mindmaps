@@ -1,0 +1,130 @@
+@startmindmap
+<style>
+node {
+    RoundCorner 10
+    BackgroundColor #FEFECE
+}
+
+rootNode {
+    RoundCorner 10
+    BackgroundColor lightblue
+}
+</style>
+
++ Container Security
+++ Container Image Security
++++_ Minimal container images
++++_ Encrypted containers
++++_ Signing containers
++++_ Regular vulnerability scans
++++_ Securing build and development environment
+++ Container Repository Security
+++ Container Runtime Security
++++_ Vulnerability, incident, and patch management
++++_ Unprivileged containers
++++_ Resource isolation
+++++_ Network
+++++_ CPU
+++++_ File system
+++++_ Memory
+++++_ Peripherals
++++_ Security policies
+++++_ Seccomp policies
+++++_ MAC policies
+++++_ POSIX capabilities assigned to Containers
+++ Host OS Security
++++_ OS security hardening
++++_ Access control
+++++_ MAC (Mandatory Access Control)
+++++_ DAC (Discretionary Access Control)
+++++_ RBAC (Role based Access Control)
++++_ Patch management and up to date kernel and user space
++++_ Secure boot
++++_ Code signing
++++_ Minimal OS
+++ Orchestration Security
++++_ Secure cluster configuration
+++++_ API security
+++++_ Network security
+++++_ Kubelets/etcd
++++_ Authorization
+++++_ Roles
+++++_ RBAC (Role based Access Control)
+++++_ ABAC (Attribute based Access Control)
+++++_ Authorization modes
++++++_ Node authorization
++++++_ Webhook authorization
++++_ Pod security
++++_ Auditing, logging and monitoring
++++_ Security assurance
++++_ Dashboard security
+++ Network Security
++++_ Network isolation
++++_ TLS
+++++_ Mutual authentication
+++++_ Best security practices
++++_ VPN
+++++_ IPSec
+++++_ OpenVPN
+++++_ WireGuard
+-- Supply Chain Security
+---_ Vulnerability and incident management
+---_ Software supply chain security
+---_ Hardware supply chain security
+-- Threat Modelling
+-- Memory Safety and protection
+---_ Stack smashing detection
+----_ Stack canaries
+----_ Shadow stack
+----_ HW based technologies
+-----_ Arm PA (Pointer Authentication)
+-----_ Arm BTI (Branch Target Identifier)
+-----_ Arm MTE (Memory Tagging Extension)
+-----_ Intel CET (Control Flow Enforcement)
+-----_ CHERI
+---_ Stack overflow protection
+----_ Guard pages
+----_ Stack clash protection
+---_ Protection against out of bounds access
+---_ Protection against use after free
+---_ Protection against double free
+---_ Non-executable heap and stack
+---_ Non-writable code segments
+-- Data Security
+---_ Data confidentiality, integrity and authenticoty
+---_ Data security at rest
+---_ Data security in use
+---_ Data security in transit
+---_ Data classification
+---_ Access control
+-- HW Based Isolation
+---_ Confidential Computing
+----_ Intel SGX
+----_ Intel TDX
+----_ AMD SEV
+----_ Arm CCA
+----_ GPU Confidential Computing
+---_ HW based crypto modules
+---_ TEE (Trusted Execution Environment)
+-- Crypto and Key Management
+---_ Crypto acceleration
+---_ HW based crypto and key management
+---_ Crypto best security practices
+---_ Code signing
+---_ Digital identities
+----_ X.509 certificates
+----_ Certificate operations (enrollment, revocation,..)
+-- Security Assurance
+---_ Security testing
+----_ Penetration testing
+----_ Functional security testing
+----_ Fuzzing
+----_ API testing
+---_ Auditing
+----_ Docker Bench for Security
+----_ CIS (Center for Internet Security) Benchmarks
+-- Security Guidelines
+---_ OWASP Docker Top 10
+---_ NIST 800-190 Application Container Security Guide
+---_ Gartner - Best practices for running Containers and Kubernetes in production
+@endmindmap

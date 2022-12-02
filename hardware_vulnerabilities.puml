@@ -1,0 +1,70 @@
+@startmindmap
+<style>
+node {
+    RoundCorner 10
+    BackgroundColor #FEFECE
+}
+
+rootNode {
+    RoundCorner 10
+    BackgroundColor lightblue
+}
+</style>
+
++ Hardware Vulnerabilities
+++ Fault Injection Attacks
++++_ Power glitching
++++_ Clock glitching
++++_ Laser fault injection
++++_ Focused ion beam attack
+++ Rowhammer Attacks
+++ Microarchitectural Side Channel Attacks
++++_ Spectre variants
+++++_ Variant 1 (Bounds Check Bypass)
+++++_ Variant 2 (Branch Target Injection)
+++++_ Variant 3 (Meltdown)
+++++_ Variant 3a (Rogue System Register Read)
+++++_ Variant 4 (Speculative Store Bypass)
++++_ Foreshadow/Foreshadow NG
++++_ The MDS (Microarchitectural Data Sampling) attacks
+++++_ Fallout
+++++_ MFBDS (Microarchitectural Fill Buffer Data Sampling)
+++++_ MLPDS (Microarchitectural Load Port Data Sampling)
+++++_ MDSUM (Microarchitectural Data Sampling Uncacheable Memory)
+++++_ RIDL (Rogue In-Flight Data Load)
+++++_ TAA (Transactional Asynchronous Abort)
+++++_ Snoop
++++_ Straight-line Speculation
++++_ PACMAN
+++ Access Control
++++_ Invalid access control
++++_ Missing access control
+++ Probing Attacks
+++ DMA Attacks
+-- Side Chanel Attacks
+---_ Power analysis
+----_ Differential Power Analysis (DPA)
+----_ Refined Power Analysis (RPA)
+----_ Simple Power Analysis (SPA)
+---_ Electromagnetic emission analysis
+---_ Thermal attacks
+---_ Timing attacks
+---_ Acoustic attacks
+---_ Template attacks
+-- Leftover debug capabilities
+-- Security misconfiguration
+-- Crypto Vulnerabilities
+---_ Leakage of keys
+---_ Broken integrity
+---_ Broken confidentiality
+---_ Broken RNG
+---_ The use of weak keys
+---_ The use of compromised keys
+---_ Incorrect use of crypto algorithms
+---_ Incorrect use of mode of operations
+---_ Incorrect use of padding modes
+---_ Incorrect key derivation
+-- Missing Locks
+---_ Register locks
+---_ Bit locks
+@endmindmap

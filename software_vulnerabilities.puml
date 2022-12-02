@@ -1,0 +1,65 @@
+@startmindmap
+<style>
+node {
+    RoundCorner 10
+    BackgroundColor #FEFECE
+}
+
+rootNode {
+    RoundCorner 10
+    BackgroundColor lightblue
+}
+</style>
+
++ Software Vulnerabilities
+++ Memory safety issues
++++_ Out of bounds access
++++_ Double free
++++_ Use after free
++++_ Wild/dangling pointers
++++_ Stack smashing
++++_ Stack overflow/clash
++++_ NULL pointer dereference
++++_ Improper memory permissions
++++_ Format string vulnerability
+++ Cryprography
++++_ The use of vulnerable crypto libraries
++++_ Hard coded keys
++++_ Timing side channels
++++_ Loss of confidentiality and integrity
+++++_ at rest
+++++_ in use
+++++_ in transit
++++_ Incorrect use of crypto algorithms
++++_ Incorrect use of mode of operations
++++_ Incorrect use of padding modes
++++_ Incorrect key derivation
++++_ Insuffient key lengths
++++_ Broken authentication
+++ Leftover debug capabilities
+++ Security misconfiguration
+-- Improper input validation
+---_ Improper serialization/deserialization
+---_ Improper type validation
+---_ Improper length validation
+---_ Insufficient verification of data authenticity
+---_ Improper neutralization
+---_ Path traversal
+-- Race conditions
+-- Logical errors
+-- Uncontrolled Resource Consumption
+-- Arithmetic mistakes
+---_ Integer overflow
+---_ Integer underflow
+---_ Division by zero
+-- Improper access control
+---_ Missing authorization
+---_ Missing authentication
+---_ Incorrect default AC policies
+---_ Hardcoded credentials
+-- Improper use of functions
+---_ Failure to check return codes
+---_ Failure to validate funtion parameters
+---_ Type conversion vulnerabilities
+---_ Use of obsolote functions
+@endmindmap
